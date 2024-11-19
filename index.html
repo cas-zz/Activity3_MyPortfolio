@@ -12,27 +12,80 @@
         <source src="peachnblue.mp4" type="video/mp4" />
       </video>
     </div>
+    <header class="headd">
+      <div class="logo-container">
+        <img src="cassandralogo.png" class="logo" />
+      </div>
 
-    <aside class="sidebar" id="sidebar">
-      <ul class="sidebar-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </aside>
+      <aside class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
+      <button class="menu-toggle" id="menuToggle">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+      </button>
+    </header>
     <main>
       <section id="home">
-        <h2>Home</h2>
-        <p>CASSSYYYYYY</p>
+        <img id="profile-pic" src="formalpic.png" alt="Profile Picture" />
+        <div class="btn-container">
+          <a href="/Assets/Gudalle_CV.pdf" download="Gudalle_CV.pdf">
+            <button class="btn btn-color-1">Download CV</button>
+          </a>
+        </div>
+        <div class="home__text">
+          <p class="home__text1">Bonjour! I am</p>
+          <p class="home__text2">Ma. Reina Cassandra Gudalle</p>
+        </div>
+        <div class="container">
+          <button class="about-btn" id="aboutButton">About Me</button>
+          <div class="info-box hidden" id="infoBox">
+            <h2>About Me</h2>
+            <p>
+              Bonjour! I am 20 years old, currently a 3rd-year college student
+              at Technolohical University of the Philippines. I am taking the
+              course Bachelor Science in Information Systems. I am a student
+              with a passion for learning, technology, and solving real-world
+              problems.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="skills">
-        <h2>Skills</h2>
-        <p>Programming Languages</p>
-        <p>Digital</p>
+        <h2 class="skillstext">Skills</h2>
+        <div class="skills-container">
+          <div class="skillsbox">
+            <img
+              src="programming-logo.png"
+              alt="Programming Languages"
+              class="skillslogo"
+            />
+            <p class="skillshover-text">
+              C          | Beginner,
+              C++        | Beginner,
+              Java       | Beginner,
+              Javascript | Beginner
+            </p>
+          </div>
+
+          <div class="skillsbox">
+            <img
+              src="software-logo.png"
+              alt="Software Skills"
+              class="skillslogo"
+            />
+            <p class="skillshover-text">VS Code, SQL, CodeBlocks, Cisco Packet Tracer</p>
+          </div>
+
+        </div>
       </section>
 
       <section id="projects">
