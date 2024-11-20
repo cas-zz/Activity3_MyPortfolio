@@ -9,7 +9,7 @@ menuToggle.addEventListener("click", () => {
 document.addEventListener("scroll", () => {
   const home = document.getElementById("home");
   const skills = document.getElementById("skills");
-  const projects = document.getElementById("projects");
+  const experience = document.getElementById("experience");
   const contact = document.getElementById("contact");
 
   function fadeInOnScroll(section) {
@@ -19,7 +19,7 @@ document.addEventListener("scroll", () => {
     if (sectionPosition < windowHeight && sectionPosition > 0) {
       const opacityAmount =
         1 -
-        Math.abs((sectionPosition - windowHeight / 3) / (windowHeight / 0.5));
+        Math.abs((sectionPosition - windowHeight / 3) / (windowHeight / 0));
       section.style.opacity = opacityAmount;
     } else {
       section.style.opacity = 0;
@@ -28,7 +28,7 @@ document.addEventListener("scroll", () => {
 
   fadeInOnScroll(home);
   fadeInOnScroll(skills);
-  fadeInOnScroll(projects);
+  fadeInOnScroll(experience);
   fadeInOnScroll(contact);
 });
 
