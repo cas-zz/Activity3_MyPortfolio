@@ -52,7 +52,6 @@ body {
   width: 100%;
   max-width: 150px;
   height: auto;
-  transition: opacity 0.5s ease;
 }
 
 .sidebar {
@@ -185,7 +184,6 @@ section:target {
   margin: 20px;
   display: block;
   opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
 .btn-container {
@@ -385,7 +383,7 @@ section:target {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(253, 184, 226, 0.6); /* Semi-transparent background */
+  background: rgba(253, 184, 226, 0.6);
   color: #f9f9e0;
   display: flex;
   flex-direction: column;
@@ -397,7 +395,7 @@ section:target {
 }
 
 .project-box:hover .project-overlay {
-  opacity: 1; /* Show overlay on hover */
+  opacity: 1;
 }
 
 .project-title {
@@ -424,7 +422,7 @@ section:target {
 
 #experience {
   padding: 40px 20px;
-  background-color:transparent;
+  background-color: transparent;
   color: #3aa6b9;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -479,12 +477,6 @@ section:target {
   text-align: center;
 }
 
-#contact h2 {
-  margin-bottom: 10px;
-  font-size: 2rem;
-  color: #3aa6b9;
-}
-
 #contact p {
   margin-bottom: 20px;
   color: #3aa6b9;
@@ -519,7 +511,7 @@ form#contact-form button {
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -532,7 +524,7 @@ form#contact-form button:hover {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 5px;
 }
 
 .social-btn {
@@ -541,7 +533,7 @@ form#contact-form button:hover {
   font-size: 1rem;
   color: #f9f9e0;
   background-color: #3aa6b9;
-  border-radius: 5px;
+  border-radius: 30px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -596,24 +588,24 @@ footer {
   }
 
   #profile-pic {
-    position: absolute; /* Allows precise placement */
-    top: 20px; /* Adjust the vertical position */
-    right: 10px; /* Adjust the horizontal position */
-    width: 120px; /* Adjust size for mobile screens */
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 120px;
     height: 150px;
   }
 
   .btn-container {
-    position: absolute; /* Place it relative to the viewport or the nearest positioned ancestor */
-    top: 200px; /* Adjust this value based on the height of the profile picture */
-    right: 33px; /* Align with the profile picture */
+    position: absolute;
+    top: 200px;
+    right: 33px;
     text-align: center;
   }
 
   .btn {
     font-size: 12px;
   }
-  
+
   .about-btn {
     font-size: 12px;
     position: relative;
@@ -622,28 +614,26 @@ footer {
   }
 
   .container {
-    position: absolute; /* Place it relative to the viewport or the nearest positioned ancestor */
-    top: 138px; /* Adjust this value based on the height of the profile picture */
-    right: 130px; /* Align with the profile picture */
-  }
-  
-  .info-box {
-    padding: 10px 15px;  /* Increased padding for a larger box */
-    text-align: right;   /* Keep text aligned to the right */
     position: absolute;
-    right: 40px;  /* Adjust position to move it more to the right */
-    top: 50px;  /* Move the box higher */
-    font-size: 0.7rem;  /* Increase font size */
-    width: 200px; /* Set a specific width if needed, or use auto if the content is dynamic */
-    max-width: 300px;  /* Optional: Limit the max width of the box */
-}
+    top: 138px;
+    right: 130px;
+  }
 
-  
+  .info-box {
+    padding: 10px 15px;
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    font-size: 0.7rem;
+    width: 200px;
+    max-width: 300px;
+  }
 
   .home__text {
     position: absolute;
     text-align: right;
-    top: 60px; /* Adjust this value based on the height of the profile picture */
+    top: 60px;
     right: 170px;
   }
 
@@ -652,7 +642,7 @@ footer {
     font-size: 1.2rem;
     color: #ff9eaa;
   }
-  
+
   .home__text1 {
     margin: 0;
     font-size: 0.8rem;
@@ -660,6 +650,14 @@ footer {
   }
 
   .skillstext {
+    font-size: 1.5rem;
+  }
+
+  #projects h2 {
+    font-size: 1.5rem;
+  }
+
+  #experience h2 {
     font-size: 1.5rem;
   }
 

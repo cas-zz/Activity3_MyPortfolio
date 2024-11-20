@@ -18,8 +18,7 @@ document.addEventListener("scroll", () => {
 
     if (sectionPosition < windowHeight && sectionPosition > 0) {
       const opacityAmount =
-        1 -
-        Math.abs((sectionPosition - windowHeight / 3) / (windowHeight / 0));
+        1 - Math.abs((sectionPosition - windowHeight / 3) / (windowHeight / 0));
       section.style.opacity = opacityAmount;
     } else {
       section.style.opacity = 0;
