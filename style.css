@@ -116,12 +116,13 @@ body {
 }
 
 .menu-toggle:hover .bar {
-  background-color: #ffd0d0;
+  background-color: #f9f9e0;
 }
 
 .menu-toggle.open .bar-1 {
   transform: rotate(45deg);
   position: absolute;
+  top: 10px;
 }
 
 .menu-toggle.open .bar-2 {
@@ -131,6 +132,7 @@ body {
 .menu-toggle.open .bar-3 {
   transform: rotate(-45deg);
   position: absolute;
+  top: 10px;
 }
 
 .menu-toggle:hover {
@@ -550,141 +552,3 @@ footer {
   margin-top: 50px;
 }
 
-@media (max-width: 1000px) {
-  .headd {
-    flex-direction: column;
-    height: 55px;
-    padding: 5px;
-  }
-
-  .menu-toggle {
-    top: 17px;
-    left: 15px;
-  }
-
-  .logo-container {
-    position: static;
-    text-align: center;
-    margin-top: -46.5px;
-  }
-
-  .logo {
-    max-width: 120px;
-  }
-
-  .sidebar {
-    width: 50%;
-    left: -110%;
-    padding: 60px 10px;
-  }
-
-  .sidebar.open {
-    left: 1;
-  }
-
-  .sidebar-menu li a {
-    font-size: 1rem;
-    padding: 8px;
-  }
-
-  #profile-pic {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 120px;
-    height: 150px;
-  }
-
-  .btn-container {
-    position: absolute;
-    top: 200px;
-    right: 33px;
-    text-align: center;
-  }
-
-  .btn {
-    font-size: 12px;
-  }
-
-  .about-btn {
-    font-size: 12px;
-    position: relative;
-    display: block;
-    margin: 10px auto;
-  }
-
-  .container {
-    position: absolute;
-    top: 138px;
-    right: 130px;
-  }
-
-  .info-box {
-    padding: 10px 15px;
-    text-align: right;
-    position: absolute;
-    right: 40px;
-    top: 50px;
-    font-size: 0.7rem;
-    width: 200px;
-    max-width: 300px;
-  }
-
-  .home__text {
-    position: absolute;
-    text-align: right;
-    top: 60px;
-    right: 170px;
-  }
-
-  .home__text2 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #ff9eaa;
-  }
-
-  .home__text1 {
-    margin: 0;
-    font-size: 0.8rem;
-    color: #3aa6b9;
-  }
-
-  .skillstext {
-    font-size: 1.5rem;
-  }
-
-  #projects h2 {
-    font-size: 1.5rem;
-  }
-
-  #experience h2 {
-    font-size: 1.5rem;
-  }
-
-  .skills-container,
-  .project-container,
-  .experience-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-box,
-  .experience-item {
-    width: 90%;
-    margin: 10px 0;
-    height: 50%;
-  }
-
-  .project-thumbnail {
-    height: auto;
-  }
-
-  form#contact-form .form-group {
-    width: 90%;
-  }
-
-  .social-links {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
